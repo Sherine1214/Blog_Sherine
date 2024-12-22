@@ -37,40 +37,37 @@ This project is a RESTful API for a blog application. It allows users to registe
 
 ---
 
-## Installation
+##Installation
 
-### Prerequisites
+#Prerequisites
 - Ruby 3.0.3
 - Rails 
 - PostgreSQL installed and running
 
-### Steps
+#Steps
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repository/blog-api.git
    cd blog-application
 2.Install dependencies:
-bundle install
+  bundle install
 3.Set up the database:
-rails db:create
-rails db:migrate
+  rails db:create
+  rails db:migrate
 4.Seed the database (optional):
-rails db:seed
+  rails db:seed
 5.Start the Rails server:
-rails server
+  rails server
 
-Usage
-API Endpoints
-Authentication
-POST /signup: Register a new user.
-POST /login: Log in and receive a JWT token.
-Blog Posts
-POST /posts: Create a new post (requires authentication).
-GET /posts: Retrieve all posts (supports pagination).
-GET /posts/:id: Retrieve a specific post by ID.
-PATCH /posts/:id: Update a post (requires authentication; only the owner can update).
-DELETE /posts/:id: Delete a post (requires authentication; only the owner can delete).
-Bonus Features
-GET /posts?query=search_term: Search for posts by title.
-POST /posts/:id/like: Like a post.
-
+#Usage
+1.API Endpoints
+2.Authentication
+3.POST /signup: Register a new user.
+4.POST /login: Log in and receive a JWT token.
+5.Blog Posts
+6.POST /posts: Create a new post (requires authentication).
+7.GET /posts: Retrieve all posts (supports pagination).
+8.GET /posts/:id: Retrieve a specific post by ID.
+9.PATCH /posts/:id: Update a post (requires authentication; only the owner can update).
+10.DELETE /posts/:id: Delete a post (requires authentication; only the owner can delete).
+##This also includes error handling
